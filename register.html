@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+      <div id="particles-js"></div>
+
+
+   <section class="section auth-container">
+  <div class="container">
+    <div class="auth-card">
+      <h2>Join Us</h2>
+      <form class="auth-form" id="registerForm">
+        <div class="form-group">
+          <input type="text" placeholder="Username" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="neon-btn">Get Started</button>
+      </form>
+      <p class="auth-link">Already have an account? <a href="login.html">Sign in</a></p>
+    </div>
+  </div>
+</section>
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = 'login.html';
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
